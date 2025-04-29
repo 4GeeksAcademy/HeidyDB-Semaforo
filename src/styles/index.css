@@ -40,5 +40,19 @@
     .luzEncendidaVerde {
         box-shadow: 0 0 20px greenyellow
     }
+
+    .luzEncendidaLila {
+        box-shadow: 0 0 20px rgb(179, 62, 179)
+    }
     
+    .btn{
+        margin-left: 300px;
+        margin-top: 10px;
+        width: 60px;
+        height: 40px;
+        font-size: small;
+        text-align: center;
+        padding: 0;
+
+    }
    
