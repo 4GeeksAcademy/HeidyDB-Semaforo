@@ -6,38 +6,24 @@
     ...Or you can use the import command to include 
     other sylesheets into your bunde as well, e.j:
     
-    import 'relative/path/to/stylesheet.scss';
+    import 'relative/path/to/stylesheet.scss';*/
 
-
-.cuadro-semaforo{
-    margin-top: 100px;
-    width: 200px;
-    height:600x;
-    align-content :center;
-    }*/
-
-   
+ 
     
-    .soporteSemaforo {
-        margin-top: 342px;
-        margin-left: 946px;
+    .paloSemaforo {
+        margin-top: 20px;
+        margin-left: 325px;
         width: 10px;
-        height: 30px;
+        height: 50px;
     }
     
     .semaforo {
-        margin-left: 60%;
+        margin-left: 300px;
         width: 60px;
         height: 120px;
         box-shadow: 5px 5px 10px black;
     }
-    
-   /*.semaforoPurple {
-        margin-left: 60%;
-        width: 60px;
-        height: 160px;
-        box-shadow: 5px 5px 10px black;
-    }*/
+
     
     .luces {
         height: 25px;
@@ -45,10 +31,14 @@
         border-radius: 100%;
     }
     
-    .luzEncendida {
-        box-shadow: 0 0 20px white
+    .luzEncendidaRoja {
+        box-shadow: 0 0 20px  red
+    }
+    .luzEncendidaAmarilla {
+        box-shadow: 0 0 20px  yellow
+    }
+    .luzEncendidaVerde {
+        box-shadow: 0 0 20px greenyellow
     }
     
-    /*.luzPurple {
-        background-color: purple;
-    }*/
+   
