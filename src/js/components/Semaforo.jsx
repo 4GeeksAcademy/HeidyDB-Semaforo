@@ -7,7 +7,7 @@ const Semaforo = () => {
 
 	const [color, setColor] = useState("red");
 
-	const cambiarColorBoton = () => { // cambiar la luz del semaforo c el boton 
+	const cambiarColorBoton = () => { // cambiar la luz del semaforo c el boton en el onclick del div
 
 		if (color === "red") {
 			setColor("yellow")
@@ -18,7 +18,7 @@ const Semaforo = () => {
 		}
 	}
 
-	const ponerColorLila = () => { // cambiar la luz del semaforo c el boton 
+	const ponerColorLila = () => { // agregar una luz lila al pulsar el boton 
 		setColor("lila")
 	}
 
@@ -32,6 +32,11 @@ const Semaforo = () => {
 
 				<div className="paloSemaforo bg-black"></div>
 				<div className="semaforo bg-black rounded d-flex flex-column">
+
+					{/*si es el color, activa la clase luzEncendida... que es la
+					que pone la sombra (roja amarilla o verde )segun el color q sea, sino no hace
+					nada */}
+					
 					<div className={`${color === "red" ? "luzEncendidaRoja" : ""
 						} luces bg-danger m-auto`}
 						onClick={() => setColor("red")}></div>
@@ -44,7 +49,7 @@ const Semaforo = () => {
 						} luces bg-success m-auto`}
 						onClick={() => setColor("green")}></div>
 
-
+					{/* si el color es lila agrega el div de la bola lila y redimenciona el semaforo*/}
 					<div className={`${color === "lila" ? "luzEncendidaLila luces bg-violet m-auto" : ""
 						} `}
 						onClick={() => setColor("lila")}></div>
